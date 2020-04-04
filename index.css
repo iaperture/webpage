@@ -1,0 +1,70 @@
+.page_head{
+	color:#FFFFFF;
+	font-size:20px;
+	background-color:#3F51B5;
+	height:100px;
+	font-family:"Arial",Helvetica,sans-serif;	/*字体*/
+}
+
+.page_head_text{
+	text-align:center;
+	padding: 25px 0;
+}
+
+.page_left_bar{
+	background-color:#E8EAF6;
+	height:600px;
+	width:200px;
+	/* border:4px solid #1A237E; */
+}
+
+.page_left_bar_container{
+	font-size:20px;
+	color:#FFFFFF;
+	background-color:#3F51B5;
+	width:180px;
+	text-align:center;
+	height:50px;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:4px;
+}
+
+.page_left_text{
+	padding:10px;
+}
+
+.page_center{
+	background-color:#3F51B5;
+	width:400px;
+	height:600px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+ 
+/* 左右侧栏的宽度 */
+.column.side {
+  width: 25%;
+}
+ 
+/* 中间列宽度 */
+.column.middle {
+  width: 75%;
+}
+ 
+/* 响应式布局 - 宽度小于600px时设置上下布局 */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
